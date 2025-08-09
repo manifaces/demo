@@ -1,0 +1,13 @@
+{
+  // отдельные правила для TS-файлов в корне сервиса
+  // (таких как vite.config.ts)
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "strict": true
+  },
+  "exclude": ["src"]
+}

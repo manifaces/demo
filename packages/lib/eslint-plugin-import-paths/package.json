@@ -1,0 +1,9 @@
+{
+  "name": "@demo/eslint-plugin-import-paths",
+  "main": "index.mjs",
+  "type": "module",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  }
+}
