@@ -303,3 +303,31 @@ export const dataE = [
     color: '#2482FF'
   }
 ];
+
+export const dataF = [
+  {
+    name: '1 полугодие 2022',
+    value: 4.5,
+    tooltipValue: '2022'
+  },
+  {
+    name: '2 полугодие 2022',
+    value: 5.85,
+    tooltipValue: '2022'
+  },
+  {
+    name: '3 полугодие 2022',
+    value: 5.7,
+    tooltipValue: '2022'
+  },
+  {
+    name: '4 полугодие 2022',
+    value: 6.4,
+    tooltipValue: '2022'
+  },
+  {
+    name: '1 полугодие 2023',
+    value: 5.9,
+    tooltipValue: '2023'
+  }
+];
