@@ -1,0 +1,9 @@
+/* stylelint-disable */
+.LineBarDiagram {
+  :global(.recharts-wrapper) {
+    max-width: var(--chart-width, 556px);
+    max-height: var(--chart-width, 140px);
+    width: 100% !important;
+    height: 100% !important;
+  }
+}

@@ -331,3 +331,102 @@ export const dataF = [
     tooltipValue: '2023'
   }
 ];
+
+export const dataG = [
+  {
+    name: 'Январь',
+    prevValue: 80000,
+    currentValue: 80000 + 20000,
+    change: '+20%',
+    percent: 80,
+    lineValue: 40000
+  },
+  {
+    name: 'Февраль',
+    prevValue: 64589,
+    currentValue: 64589 + 20000,
+    change: '+20%',
+    percent: 60,
+    lineValue: 64589
+  },
+  {
+    name: 'Март',
+    prevValue: 44509,
+    currentValue: 44509 + 20000,
+    change: '+20%',
+    percent: 90,
+    lineValue: 44509
+  },
+  {
+    name: 'Апрель',
+    prevValue: 72445,
+    currentValue: 72445 + 20000,
+    change: '+20%',
+    percent: 100,
+    lineValue: 72445
+  },
+  {
+    name: 'Май',
+    prevValue: 119747,
+    currentValue: 119747 + 20000,
+    change: '+20%',
+    percent: 120,
+    lineValue: 119747
+  },
+  {
+    name: 'Июнь',
+    prevValue: 89574,
+    currentValue: 89574 + 20000,
+    change: '+20%',
+    percent: 95,
+    lineValue: 89574
+  },
+  {
+    name: 'Июль',
+    prevValue: 39500,
+    currentValue: 39500 + 20000,
+    change: '+20%',
+    percent: 75,
+    lineValue: 39500
+  },
+  {
+    name: 'Август',
+    prevValue: 54782,
+    currentValue: 54782 + 20000,
+    change: '+20%',
+    percent: 60,
+    lineValue: 54782
+  },
+  {
+    name: 'Сентябрь',
+    prevValue: 99321,
+    currentValue: 99321 + 20000,
+    change: '+20%',
+    percent: 120,
+    lineValue: 99321
+  },
+  {
+    name: 'Октябрь',
+    prevValue: 110000,
+    currentValue: 110000 + 20000,
+    change: '+20%',
+    percent: 100,
+    lineValue: 110000
+  },
+  {
+    name: 'Ноябрь',
+    prevValue: 57834,
+    currentValue: 57834 + 20000,
+    change: '+20%',
+    percent: 80,
+    lineValue: 57834
+  },
+  {
+    name: 'Декабрь',
+    prevValue: 32442,
+    currentValue: 32442 + 20000,
+    change: '+20%',
+    percent: 40,
+    lineValue: 32442
+  }
+];
