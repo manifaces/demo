@@ -1,0 +1,1 @@
+export { BarDiagram } from './BarDiagram';
