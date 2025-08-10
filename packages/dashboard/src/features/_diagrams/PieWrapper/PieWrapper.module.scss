@@ -1,0 +1,31 @@
+@use 'styles' as ds;
+
+.PieWrapper {
+  display: flex;
+  gap: var(--gap);
+  align-items: center;
+
+  &__labels {
+    display: grid;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  &__color {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background-color: var(--color);
+  }
+
+  &__name {
+    @include ds.font-body-xs-medium;
+  }
+}

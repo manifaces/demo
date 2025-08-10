@@ -1,1 +1,1 @@
-export { BarDiagram } from './BarDiagram';
+export { BarDiagram, type BarDiagramProps } from './BarDiagram';

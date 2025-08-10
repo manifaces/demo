@@ -279,3 +279,27 @@ export const dataD = [
     change: '+20%'
   }
 ];
+
+export const dataE = [
+  {
+    name: 'Оффлайн',
+    valuePercent: 8,
+    value: '17 567',
+    change: '+6%',
+    color: '#37E29A'
+  },
+  {
+    name: 'mos.ru',
+    valuePercent: 8,
+    value: '17 567',
+    change: '+6%',
+    color: '#F37154'
+  },
+  {
+    name: 'Сторонние сервисы',
+    valuePercent: 84,
+    value: '17 567',
+    change: '+6%',
+    color: '#2482FF'
+  }
+];
