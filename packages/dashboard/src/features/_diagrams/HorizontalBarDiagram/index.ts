@@ -1,0 +1,1 @@
+export { HorizontalBarDiagram } from './HorizontalBarDiagram';
