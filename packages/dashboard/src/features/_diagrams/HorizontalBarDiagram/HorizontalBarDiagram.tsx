@@ -1,9 +1,8 @@
-import { CSSProperties, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid } from 'recharts';
 import { MultipleBarDiagramProps } from 'features/_diagrams/MultipleBarDiagram';
 import { formatChartYLabel, formatChartXLabel } from 'utils/formatChartAxisLabel';
 import { MultipleBarTooltip, MultipleBarTooltipPosition } from '../DiagramTooltip/MultipleBarTooltip';
-import s from './HorizontalBarDiagram.module.scss';
 
 export const HorizontalBarDiagram = ({
   data,
@@ -83,19 +82,13 @@ export const HorizontalBarDiagram = ({
           {tooltipContent(e.current)}
         </div>
       )}
-      <div className={s.HorizontalBarDiagram}>
+      <div>
         <BarChart
           layout="vertical"
           width={width || 556}
           height={height || 140}
           data={formatData}
-          barCategoryGap={gap || 11}
-          style={
-            {
-              '--chart-width': `${width?.toString() ?? 556}px`,
-              '--chart-height': `${height?.toString() ?? 140}px`
-            } as CSSProperties
-          }>
+          barCategoryGap={gap || 11}>
           <XAxis
             type="number"
             tickFormatter={formatChartYLabel}

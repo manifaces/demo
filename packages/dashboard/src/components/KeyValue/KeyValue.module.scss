@@ -1,0 +1,20 @@
+@use 'styles' as ds;
+
+.KeyValue {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.KeyValue__label {
+  color: ds.$color-secondary-70;
+  @include ds.font-body-s-regular;
+
+  & + div {
+    @include ds.font-body-l-medium;
+  }
+
+  & + a {
+    @include ds.font-body-l-medium;
+  }
+}

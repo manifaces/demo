@@ -1,7 +1,5 @@
-import { CSSProperties } from 'react';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import { AreaTooltip } from '../DiagramTooltip/AreaTooltip';
-import s from './AreaDiagram.module.scss';
 
 export interface AreaDiagramProps {
   // данные
@@ -28,17 +26,8 @@ export const AreaDiagram = ({ data, minmax, width, height, fill, stroke }: AreaD
     return <AreaTooltip payload={e} />;
   };
   return (
-    <div className={s.AreaDiagram}>
-      <AreaChart
-        width={width || 556}
-        height={height || 220}
-        data={data}
-        style={
-          {
-            '--chart-width': `${width?.toString() ?? 556}px`,
-            '--chart-height': `${height?.toString() ?? 140}px`
-          } as CSSProperties
-        }>
+    <div>
+      <AreaChart width={width || 556} height={height || 220} data={data}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis
           dataKey="name"

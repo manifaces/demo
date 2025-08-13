@@ -1,0 +1,1 @@
+export { SoldTicket } from './SoldTicket';

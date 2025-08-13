@@ -4,307 +4,88 @@ export const dataA = [
     value: 5,
     color: '#5F58DE',
     change: '+20%',
-    tooltipValue: '1'
+    tooltipValue: '1 кв.'
   },
   {
     name: 'Февраль',
     value: 3.9,
     color: '#5F58DE',
     change: '+20%',
-    tooltipValue: '1'
+    tooltipValue: '1 кв.'
   },
   {
     name: 'Март',
     value: 5.8,
     color: '#5F58DE',
     change: '+20%',
-    tooltipValue: '1'
+    tooltipValue: '1 кв.'
   },
   {
     name: 'Апрель',
     value: 4.1,
     color: '#2482FF',
     change: '+20%',
-    tooltipValue: '2'
+    tooltipValue: '2 кв.'
   },
   {
     name: 'Май',
     value: 5,
     color: '#2482FF',
     change: '+20%',
-    tooltipValue: '2'
+    tooltipValue: '2 кв.'
   },
   {
     name: 'Июнь',
     value: 4.8,
     color: '#2482FF',
     change: '+20%',
-    tooltipValue: '2'
+    tooltipValue: '2 кв.'
   },
   {
     name: 'Июль',
     value: 3,
     color: '#40AEFF',
     change: '+20%',
-    tooltipValue: '3'
+    tooltipValue: '3 кв.'
   },
   {
     name: 'Август',
     value: 3.4,
     color: '#40AEFF',
     change: '+20%',
-    tooltipValue: '3'
+    tooltipValue: '3 кв.'
   },
   {
     name: 'Сентябрь',
     value: 4.2,
     color: '#40AEFF',
     change: '+20%',
-    tooltipValue: '3'
+    tooltipValue: '3 кв.'
   },
   {
     name: 'Октябрь',
     value: 5.6,
     color: '#37E29A',
     change: '+20%',
-    tooltipValue: '4'
+    tooltipValue: '4 кв.'
   },
   {
     name: 'Ноябрь',
     value: 5.2,
     color: '#37E29A',
     change: '+20%',
-    tooltipValue: '4'
+    tooltipValue: '4 кв.'
   },
   {
     name: 'Декабрь',
     value: 5.7,
     color: '#37E29A',
     change: '+20%',
-    tooltipValue: '4'
+    tooltipValue: '4 кв.'
   }
 ];
 
 export const dataB = [
-  {
-    name: 'Январь',
-    value: 280000,
-    color: '#5F58DE',
-    change: '+20%',
-    tooltipValue: '1'
-  },
-  {
-    name: 'Февраль',
-    value: 210000,
-    color: '#5F58DE',
-    change: '+20%',
-    tooltipValue: '1'
-  },
-  {
-    name: 'Март',
-    value: 340000,
-    color: '#5F58DE',
-    change: '+20%',
-    tooltipValue: '1'
-  },
-  {
-    name: 'Апрель',
-    value: 230000,
-    color: '#2482FF',
-    change: '+20%',
-    tooltipValue: '2'
-  },
-  {
-    name: 'Май',
-    value: 320543,
-    color: '#2482FF',
-    change: '+20%',
-    tooltipValue: '2'
-  },
-  {
-    name: 'Июнь',
-    value: 310000,
-    color: '#2482FF',
-    change: '+20%',
-    tooltipValue: '2'
-  },
-  {
-    name: 'Июль',
-    value: 180000,
-    color: '#40AEFF',
-    change: '+20%',
-    tooltipValue: '3'
-  },
-  {
-    name: 'Август',
-    value: 200000,
-    color: '#40AEFF',
-    change: '+20%',
-    tooltipValue: '3'
-  },
-  {
-    name: 'Сентябрь',
-    value: 400000,
-    color: '#40AEFF',
-    change: '+20%',
-    tooltipValue: '3'
-  },
-  {
-    name: 'Октябрь',
-    value: 390000,
-    color: '#37E29A',
-    change: '+20%',
-    tooltipValue: '4'
-  },
-  {
-    name: 'Ноябрь',
-    value: 400000,
-    color: '#37E29A',
-    change: '+20%',
-    tooltipValue: '4'
-  },
-  {
-    name: 'Декабрь',
-    value: 375648,
-    color: '#37E29A',
-    change: '+20%',
-    tooltipValue: '4'
-  }
-];
-
-export const dataC = [
-  {
-    name: 'Январь',
-    value: 280000,
-    color: '#5F58DE',
-    change: '+20%',
-    tooltipValue: '1'
-  },
-  {
-    name: 'Февраль',
-    value: 210000,
-    color: '#5F58DE',
-    change: '+20%',
-    tooltipValue: '1'
-  },
-  {
-    name: 'Март',
-    value: 340000,
-    color: '#5F58DE',
-    change: '+20%',
-    tooltipValue: '1'
-  },
-  {
-    name: 'Апрель',
-    value: 230000,
-    color: '#5F58DE',
-    change: '+20%',
-    tooltipValue: '2'
-  },
-  {
-    name: 'Май',
-    value: 320543,
-    color: '#5F58DE',
-    change: '+20%',
-    tooltipValue: '2'
-  },
-  {
-    name: 'Июнь',
-    value: 310000,
-    color: '#5F58DE',
-    change: '+20%',
-    tooltipValue: '2'
-  },
-  {
-    name: 'Июль',
-    value: 300000,
-    color: '#5F58DE',
-    change: '+20%',
-    tooltipValue: '3'
-  },
-  {
-    name: 'Август',
-    value: 460000,
-    color: '#5F58DE',
-    change: '+20%',
-    tooltipValue: '3'
-  },
-  {
-    name: 'Сентябрь',
-    value: 500000,
-    color: '#5F58DE',
-    change: '+20%',
-    tooltipValue: '3'
-  },
-  {
-    name: 'Октябрь',
-    value: 360000,
-    color: '#5F58DE',
-    change: '+20%',
-    tooltipValue: '4'
-  },
-  {
-    name: 'Ноябрь',
-    value: 470000,
-    color: '#5F58DE',
-    change: '+20%',
-    tooltipValue: '4'
-  },
-  {
-    name: 'Декабрь',
-    value: 480000,
-    color: '#5F58DE',
-    change: '+20%',
-    tooltipValue: '4'
-  }
-];
-
-export const dataD = [
-  {
-    name: parseInt('2021'),
-    value: 300,
-    color: '#9E99FF',
-    change: '+20%'
-  },
-  {
-    name: parseInt('2022'),
-    value: 250,
-    color: '#9E99FF',
-    change: '+20%'
-  },
-  {
-    name: parseInt('2023'),
-    value: 200,
-    color: '#9E99FF',
-    change: '+20%'
-  }
-];
-
-export const dataE = [
-  {
-    name: 'Оффлайн',
-    valuePercent: 8,
-    value: '17 567',
-    change: '+6%',
-    color: '#37E29A'
-  },
-  {
-    name: 'mos.ru',
-    valuePercent: 8,
-    value: '17 567',
-    change: '+6%',
-    color: '#F37154'
-  },
-  {
-    name: 'Сторонние сервисы',
-    valuePercent: 84,
-    value: '17 567',
-    change: '+6%',
-    color: '#2482FF'
-  }
-];
-
-export const dataF = [
   {
     name: '1 полугодие 2022',
     value: 4.5,
@@ -332,7 +113,7 @@ export const dataF = [
   }
 ];
 
-export const dataG = [
+export const dataC = [
   {
     name: 'Январь',
     prevValue: 80000,
@@ -431,106 +212,7 @@ export const dataG = [
   }
 ];
 
-export const dataH = [
-  {
-    name: 'Январь',
-    values: {
-      '2022': 80000,
-      '2023': 93745
-    },
-    changes: ['+160%', '-88.9%']
-  },
-  {
-    name: 'Февраль',
-    values: {
-      '2022': 64589,
-      '2023': 94758
-    },
-    changes: ['+160%', '-88.9%']
-  },
-  {
-    name: 'Март',
-    values: {
-      '2022': 44509,
-      '2023': 123678
-    },
-    changes: ['+160%', '-88.9%']
-  },
-  {
-    name: 'Апрель',
-    values: {
-      '2022': 72445,
-      '2023': 86759
-    },
-    changes: ['+160%', '-88.9%']
-  },
-  {
-    name: 'Май',
-    values: {
-      '2022': 119747,
-      '2023': 134983
-    },
-    changes: ['+160%', '-88.9%']
-  },
-  {
-    name: 'Июнь',
-    values: {
-      '2022': 89574,
-      '2023': 100000
-    },
-    changes: ['+160%', '-88.9%']
-  },
-  {
-    name: 'Июль',
-    values: {
-      '2022': 39500,
-      '2023': 10499
-    },
-    changes: ['+160%', '-88.9%']
-  },
-  {
-    name: 'Август',
-    values: {
-      '2022': 54782,
-      '2023': 68293
-    },
-    changes: ['+160%', '-88.9%']
-  },
-  {
-    name: 'Сентябрь',
-    values: {
-      '2022': 99321,
-      '2023': 87465
-    },
-    changes: ['+160%', '-88.9%']
-  },
-  {
-    name: 'Октябрь',
-    values: {
-      '2022': 110000,
-      '2023': 111111
-    },
-    changes: ['+160%', '-88.9%']
-  },
-  {
-    name: 'Ноябрь',
-    values: {
-      '2022': 57834,
-      '2023': 119843
-    },
-    changes: ['+160%', '-88.9%']
-  },
-  {
-    name: 'Декабрь',
-    values: {
-      '2022': 32442,
-      '2023': 56336
-    },
-    changes: ['+160%', '-88.9%']
-  }
-];
-
-export const dataI = [
+export const dataD = [
   {
     name: 'Московский Зоопарк',
     values: {
@@ -585,5 +267,353 @@ export const dataI = [
       Бесплатных: 10000
     },
     changes: ['+160%', '-88.9%', '-42.8%', '+54%', '+4']
+  }
+];
+
+export const diagramsData = [
+  {
+    title: 'Объекты в ремонте по категории',
+    label: '28шт',
+    data: [
+      {
+        name: 'Текущий ремонт',
+        valuePercent: 15,
+        value: '24',
+        change: '+6%',
+        color: '#2482FF'
+      },
+      {
+        name: 'Капитальный ремонт',
+        valuePercent: 85,
+        value: '6',
+        change: '+6%',
+        color: '#5F58DE'
+      }
+    ],
+    dynamicText: 'Динамика относительного предыдущего отчетного периода',
+    dynamicValue: '+9,10%'
+  },
+  {
+    title: 'Объекты в ремонте по типу',
+    label: '28шт',
+    data: [
+      {
+        name: 'Музеи',
+        valuePercent: 4,
+        value: '6',
+        change: '+6%',
+        color: '#2482FF'
+      },
+      {
+        name: 'Усадьбы',
+        valuePercent: 4,
+        value: '24',
+        change: '+6%',
+        color: '#40AEFF'
+      },
+      {
+        name: 'Культурные центры',
+        valuePercent: 4,
+        value: '6',
+        change: '+6%',
+        color: '#37E29A'
+      },
+      {
+        name: 'Иные',
+        valuePercent: 4,
+        value: '24',
+        change: '+6%',
+        color: '#F37154'
+      },
+      {
+        name: 'Театры',
+        valuePercent: 12,
+        value: '24',
+        change: '+6%',
+        color: '#5F58DE'
+      }
+    ],
+    dynamicText: 'Динамика относительного предыдущего отчетного периода',
+    dynamicValue: '+9,10%'
+  }
+];
+
+export const clusterData = [
+  {
+    title: 'Количество заявок одобрено',
+    dynamicText: 'Динамика относительного предыдущего отчетного периода',
+    dynamicValue: '+5,11%',
+    labels: ['1кв.', '2кв.', '3кв.', '4кв.'],
+    minmax: [0, 500],
+    data: [
+      {
+        name: 'Январь',
+        value: 230,
+        color: '#5F58DE',
+        change: '+20%',
+        tooltipValue: '1кв.:'
+      },
+      {
+        name: 'Февраль',
+        value: 160,
+        color: '#5F58DE',
+        change: '+20%',
+        tooltipValue: '1кв.:'
+      },
+      {
+        name: 'Март',
+        value: 270,
+        color: '#5F58DE',
+        change: '+20%',
+        tooltipValue: '1кв.:'
+      },
+      {
+        name: 'Апрель',
+        value: 240,
+        color: '#2482FF',
+        change: '+20%',
+        tooltipValue: '2кв.:'
+      },
+      {
+        name: 'Май',
+        value: 260,
+        color: '#2482FF',
+        change: '+20%',
+        tooltipValue: '2кв.:'
+      },
+      {
+        name: 'Июнь',
+        value: 120,
+        color: '#2482FF',
+        change: '+20%',
+        tooltipValue: '2кв.:'
+      },
+      {
+        name: 'Июль',
+        value: 180,
+        color: '#40AEFF',
+        change: '+20%',
+        tooltipValue: '3кв.:'
+      },
+      {
+        name: 'Август',
+        value: 265,
+        color: '#40AEFF',
+        change: '+20%',
+        tooltipValue: '3кв.:'
+      },
+      {
+        name: 'Сентябрь',
+        value: 300,
+        color: '#40AEFF',
+        change: '+20%',
+        tooltipValue: '3кв.:'
+      },
+      {
+        name: 'Октябрь',
+        value: 170,
+        color: '#37E29A',
+        change: '+20%',
+        tooltipValue: '4кв.:'
+      },
+      {
+        name: 'Ноябрь',
+        value: 140,
+        color: '#37E29A',
+        change: '+20%',
+        tooltipValue: '4кв.:'
+      },
+      {
+        name: 'Декабрь',
+        value: 200,
+        color: '#37E29A',
+        change: '+20%',
+        tooltipValue: '4кв.:'
+      }
+    ]
+  },
+  {
+    title: 'Задействовано локаций',
+    dynamicText: 'Динамика относительного предыдущего отчетного периода',
+    dynamicValue: '-0,56%',
+    labels: ['1кв.', '2кв.', '3кв.', '4кв.'],
+    data: [
+      {
+        name: 'Январь',
+        value: 230,
+        color: '#5F58DE',
+        change: '+20%',
+        tooltipValue: '1кв.:'
+      },
+      {
+        name: 'Февраль',
+        value: 160,
+        color: '#5F58DE',
+        change: '+20%',
+        tooltipValue: '1кв.:'
+      },
+      {
+        name: 'Март',
+        value: 270,
+        color: '#5F58DE',
+        change: '+20%',
+        tooltipValue: '1кв.:'
+      },
+      {
+        name: 'Апрель',
+        value: 240,
+        color: '#2482FF',
+        change: '+20%',
+        tooltipValue: '2кв.:'
+      },
+      {
+        name: 'Май',
+        value: 260,
+        color: '#2482FF',
+        change: '+20%',
+        tooltipValue: '2кв.:'
+      },
+      {
+        name: 'Июнь',
+        value: 120,
+        color: '#2482FF',
+        change: '+20%',
+        tooltipValue: '2кв.:'
+      },
+      {
+        name: 'Июль',
+        value: 180,
+        color: '#40AEFF',
+        change: '+20%',
+        tooltipValue: '3кв.:'
+      },
+      {
+        name: 'Август',
+        value: 265,
+        color: '#40AEFF',
+        change: '+20%',
+        tooltipValue: '3кв.:'
+      },
+      {
+        name: 'Сентябрь',
+        value: 240,
+        color: '#40AEFF',
+        change: '+20%',
+        tooltipValue: '3кв.:'
+      },
+      {
+        name: 'Октябрь',
+        value: 170,
+        color: '#37E29A',
+        change: '+20%',
+        tooltipValue: '4кв.:'
+      },
+      {
+        name: 'Ноябрь',
+        value: 140,
+        color: '#37E29A',
+        change: '+20%',
+        tooltipValue: '4кв.:'
+      },
+      {
+        name: 'Декабрь',
+        value: 200,
+        color: '#37E29A',
+        change: '+20%',
+        tooltipValue: '4кв.:'
+      }
+    ]
+  },
+  {
+    title: 'Представлено реквизита',
+    dynamicText: 'Динамика относительного предыдущего отчетного периода',
+    dynamicValue: '+5,11%',
+    labels: ['1кв.', '2кв.', '3кв.', '4кв.'],
+    data: [
+      {
+        name: 'Январь',
+        value: 230,
+        color: '#5F58DE',
+        change: '+20%',
+        tooltipValue: '1кв.:'
+      },
+      {
+        name: 'Февраль',
+        value: 160,
+        color: '#5F58DE',
+        change: '+20%',
+        tooltipValue: '1кв.:'
+      },
+      {
+        name: 'Март',
+        value: 270,
+        color: '#5F58DE',
+        change: '+20%',
+        tooltipValue: '1кв.:'
+      },
+      {
+        name: 'Апрель',
+        value: 240,
+        color: '#2482FF',
+        change: '+20%',
+        tooltipValue: '2кв.:'
+      },
+      {
+        name: 'Май',
+        value: 260,
+        color: '#2482FF',
+        change: '+20%',
+        tooltipValue: '2кв.:'
+      },
+      {
+        name: 'Июнь',
+        value: 120,
+        color: '#2482FF',
+        change: '+20%',
+        tooltipValue: '2кв.:'
+      },
+      {
+        name: 'Июль',
+        value: 180,
+        color: '#40AEFF',
+        change: '+20%',
+        tooltipValue: '3кв.:'
+      },
+      {
+        name: 'Август',
+        value: 265,
+        color: '#40AEFF',
+        change: '+20%',
+        tooltipValue: '3кв.:'
+      },
+      {
+        name: 'Сентябрь',
+        value: 300,
+        color: '#40AEFF',
+        change: '+20%',
+        tooltipValue: '3кв.:'
+      },
+      {
+        name: 'Октябрь',
+        value: 170,
+        color: '#37E29A',
+        change: '+20%',
+        tooltipValue: '4кв.:'
+      },
+      {
+        name: 'Ноябрь',
+        value: 140,
+        color: '#37E29A',
+        change: '+20%',
+        tooltipValue: '4кв.:'
+      },
+      {
+        name: 'Декабрь',
+        value: 200,
+        color: '#37E29A',
+        change: '+20%',
+        tooltipValue: '4кв.:'
+      }
+    ]
   }
 ];

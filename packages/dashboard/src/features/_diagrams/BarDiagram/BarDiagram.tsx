@@ -1,4 +1,4 @@
-import { CSSProperties, useCallback, useMemo, useRef, useState } from 'react';
+import { useCallback, useMemo, useRef, useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Cell } from 'recharts';
 import {
   formatChartXLabel,
@@ -7,7 +7,6 @@ import {
   formatMonthNumber
 } from 'utils/formatChartAxisLabel';
 import { BarTooltip, SmallBarTooltip } from '../DiagramTooltip';
-import s from './BarDiagram.module.scss';
 
 export interface BarDiagramProps {
   data: {
@@ -114,17 +113,7 @@ export const BarDiagram = ({
 
   const barChart = useMemo(() => {
     return (
-      <BarChart
-        width={width || 556}
-        height={height || 140}
-        data={formatData}
-        barCategoryGap={gap || 11}
-        style={
-          {
-            '--chart-width': `${width?.toString() ?? 556}px`,
-            '--chart-height': `${height?.toString() ?? 140}px`
-          } as CSSProperties
-        }>
+      <BarChart width={width || 556} height={height || 140} data={formatData} barCategoryGap={gap || 11}>
         <XAxis
           tickFormatter={getMonthNumber ? formatMonthNumber : !shortName ? formatChartXLabel : (value) => value}
           dataKey="name"
@@ -179,7 +168,7 @@ export const BarDiagram = ({
           {tooltipContent(e.current)}
         </div>
       )}
-      <div className={s.BarDiagram}>{barChart}</div>
+      <div>{barChart}</div>
     </div>
   );
 };

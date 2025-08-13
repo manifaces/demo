@@ -1,0 +1,12 @@
+@use 'styles' as ds;
+
+.MoneyValue {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  @include ds.font-body-l-medium;
+}
+
+.MoneyValue__prev {
+  color: ds.$color-secondary-70;
+}

@@ -1,8 +1,7 @@
-import { CSSProperties, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { ComposedChart, Bar, XAxis, YAxis, CartesianGrid, Line } from 'recharts';
 import { formatChartYLabel, formatChartXLabel } from 'utils/formatChartAxisLabel';
 import { LineBarTooltip } from '../DiagramTooltip/LineBarTooltip';
-import s from './LineBarDiagram.module.scss';
 
 export interface LineBarDiagramProps {
   data: {
@@ -105,18 +104,8 @@ export const LineBarDiagram = ({
           {tooltipContent(e.current)}
         </div>
       )}
-      <div className={s.LineBarDiagram}>
-        <ComposedChart
-          width={width || 556}
-          height={height || 140}
-          data={formatData}
-          barCategoryGap={gap || 11}
-          style={
-            {
-              '--chart-width': `${width?.toString() ?? 556}px`,
-              '--chart-height': `${height?.toString() ?? 140}px`
-            } as CSSProperties
-          }>
+      <div>
+        <ComposedChart width={width || 556} height={height || 140} data={formatData} barCategoryGap={gap || 11}>
           <XAxis
             tickFormatter={formatNames ? formatChartXLabel : undefined}
             dataKey="name"

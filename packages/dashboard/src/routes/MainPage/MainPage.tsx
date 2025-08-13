@@ -1,62 +1,103 @@
-import { dataA, dataB, dataC, dataD, dataE, dataF, dataG, dataH, dataI } from 'store/mockData';
+import { clusterData, dataA, dataB, dataC, diagramsData } from 'store/mockData';
 import { PieWrapper } from 'features/_diagrams/PieWrapper';
 import { AreaDiagram } from 'features/_diagrams/AreaDiagram';
 import { LineBarWrapper } from 'features/_diagrams/LineBarWrapper';
-import { MultipleBarWrapper, MultipleBarWrapperVariant } from 'features/_diagrams/MultipleBarWrapper';
 import { BarWrapper } from 'features/_diagrams/BarWrapper';
 import s from './MainPage.module.scss';
+import { CardChart } from 'components/CardChart';
+import { Badge } from 'components/Badge';
+import { Divider } from 'components/Divider';
+import { KeyValue, MoneyValue } from 'components/KeyValue';
+import { getDynamicPercent } from 'utils/getDynamicPercent';
+import { SoldTicket } from './_sections/SoldTicket';
 
 export function MainPage() {
   return (
     <main className={s.MainPage}>
-      <BarWrapper data={dataA} labels={['1кв.', '2кв.', '3кв.', '4кв.']} />
-      <BarWrapper data={dataB} minmax={[0, 600000]} height={184} />
-      <BarWrapper data={dataC} minmax={[0, 750000]} width={740} height={273} />
-      <BarWrapper data={dataD} minmax={[0, 450]} width={740} height={241} gap={50} />
-      <PieWrapper data={dataE} label="28%" gap={24} />
-      <AreaDiagram data={dataF} minmax={[0, 9]} />
-      <LineBarWrapper
-        data={dataG}
-        labels={['2022', '2023', 'Динамика посещаемости']}
-        minmax={[0, 180000]}
-        width={740}
-        height={241}
-        colors={['#9E99FF', '#5F58DE', '#FC9935']}
-        formatNames={true}
-        tooltip={true}
-      />
-      <MultipleBarWrapper
-        data={dataH}
-        labels={['2022', '2023']}
-        minmax={[0, 150000]}
-        width={740}
-        height={241}
-        colors={['#9E99FF', '#5F58DE']}
-        formatNames={true}
-        tooltip={true}
-      />
-      <MultipleBarWrapper
-        data={dataI}
-        minmax={[0, 90000]}
-        width={1176}
-        height={208}
-        colors={['#6FAFFF', '#0E69E2', '#4D9CFF', '#27B973', '#EFA22F']}
-        gap={30}
-        tooltip={true}
-        tooltipFormat="nested"
-        labels={['Билетов реализовано', 'Онлайн', 'Оффлайн', 'Платных', 'Бесплатных']}
-      />
-      <MultipleBarWrapper
-        variant={MultipleBarWrapperVariant.horizontal}
-        data={dataI}
-        minmax={[0, 90000]}
-        width={1176}
-        height={364}
-        colors={['#6FAFFF', '#0E69E2', '#4D9CFF', '#27B973', '#EFA22F']}
-        gap={6}
-        tooltip={true}
-        labels={['Всего реализовано', 'Реализовано онлайн', 'Реализовано оффлайн', 'Платных', 'Бесплатных']}
-      />
+      <h1 className={s.MainPage__title}>Дашборд</h1>
+
+      <CardChart title="Посещаемость">
+        <div className={s.MainPage__diagram}>
+          <BarWrapper data={dataA} height={194} labels={['1кв.', '2кв.', '3кв.', '4кв.']} />
+          <Divider />
+          <div className={s.MainPage__dynamics}>
+            <div className={s.MainPage__change}>Динамика относительного предыдущего отчетного периода</div>
+            <Badge content={'+5.11%'} />
+          </div>
+        </div>
+      </CardChart>
+
+      <CardChart title="Удовлетворенность услугами">
+        <div className={s.MainPage__diagram}>
+          <AreaDiagram data={dataB} minmax={[0, 9]} />
+          <Divider />
+          <div className={s.MainPage__dynamics}>
+            <div className={s.MainPage__change}>Динамика относительного предыдущего отчетного периода</div>
+            <Badge content={'+9.10%'} />
+          </div>
+        </div>
+      </CardChart>
+
+      <CardChart title="Средняя зарплата в учреждении">
+        <div className={s.MainPage__diagram}>
+          <LineBarWrapper
+            data={dataC}
+            labels={['2022', '2023', 'Динамика зарплаты']}
+            minmax={[0, 180000]}
+            width={1176}
+            height={241}
+            colors={['#9E99FF', '#5F58DE', '#FC9935']}
+            formatNames={true}
+            tooltip={true}
+          />
+          <Divider />
+          <KeyValue label={'Средняя зарплата в учреждении в текущем (прошлом) году'}>
+            <MoneyValue prevValue={72062} dynamicPercent={getDynamicPercent(92062, 72062)}>
+              {92062}
+            </MoneyValue>
+          </KeyValue>
+        </div>
+      </CardChart>
+
+      {diagramsData.map((item, index) => (
+        <CardChart key={index} title={item.title}>
+          <div className={s.MainPage__diagram}>
+            <PieWrapper data={item.data} gap={24} label={item.label} />
+            <Divider />
+            <div className={s.MainPage__dynamics}>
+              <div className={s.MainPage__change}>{item.dynamicText}</div>
+              <Badge content={item.dynamicValue} />
+            </div>
+          </div>
+        </CardChart>
+      ))}
+
+      <SoldTicket />
+
+      <CardChart title="Кинокластер">
+        <div className={s.MainPage__graphs}>
+          {clusterData.map((item, index) => (
+            <CardChart key={index} title={item.title}>
+              <div className={s.MainPage__diagram}>
+                <BarWrapper
+                  data={item.data}
+                  width={340}
+                  height={184}
+                  labels={item.labels}
+                  gap={4}
+                  getMonthNumber={true}
+                  minmax={item.minmax || [0, 340]}
+                />
+                <Divider />
+                <div className={s.MainPage__dynamics}>
+                  <div className={s.MainPage__change}>{item.dynamicText}</div>
+                  <Badge content={item.dynamicValue} />
+                </div>
+              </div>
+            </CardChart>
+          ))}
+        </div>
+      </CardChart>
     </main>
   );
 }
