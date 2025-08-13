@@ -1,0 +1,1 @@
+export { AreaDiagram } from './AreaDiagram';

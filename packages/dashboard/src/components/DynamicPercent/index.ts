@@ -1,0 +1,1 @@
+export { DynamicPercent } from './DynamicPercent';

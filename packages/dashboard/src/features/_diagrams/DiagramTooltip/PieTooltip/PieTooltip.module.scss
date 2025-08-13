@@ -1,0 +1,52 @@
+@use 'styles' as ds;
+
+.PieTooltip {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  padding: 16px 16px 16px 20px;
+  background-color: ds.$color-secondary-0;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px 0 rgb(56 62 73 / 12%);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -6px;
+    display: block;
+    width: 8px;
+    height: 16px;
+    background-image: url('./_assets/Shape.svg');
+  }
+
+  &__color {
+    flex-shrink: 0;
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+    border-radius: 4px;
+    background-color: var(--color, #2482ff);
+  }
+
+  &__title {
+    @include ds.font-caption-s-medium;
+    margin-right: 8px;
+  }
+
+  &__value,
+  &__valuePercent {
+    @include ds.font-caption-s-medium;
+    margin-right: 4px;
+  }
+
+  &__value {
+    color: ds.$color-secondary-70;
+  }
+
+  &__change {
+    transform: translateX(4px);
+  }
+}

@@ -1,5 +1,5 @@
-// from sanitize.css/typography.css
-$font-family-default:
+$family-inter: 'Inter';
+$family-default:
   system-ui,
   /* macOS 10.11-10.12 */ -apple-system,
   /* Windows 6+ */ 'Segoe UI',
@@ -12,3 +12,117 @@ $font-family-default:
   /* Windows emoji */ 'Segoe UI Emoji',
   /* Windows emoji */ 'Segoe UI Symbol',
   /* Linux emoji */ 'Noto Color Emoji';
+
+@mixin headline-1 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+}
+
+@mixin headline-2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+@mixin headline-3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+@mixin headline-4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin body-l-semibold {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin body-l-medium {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin body-l-regular {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin body-m-semibold {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+@mixin body-m-medium {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+@mixin body-m-regular {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+@mixin body-s-semibold {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@mixin body-s-medium {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@mixin body-s-regular {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@mixin body-xs-semibold {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+@mixin body-xs-medium {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+@mixin body-xs-regular {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+@mixin caption-m-regular {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+@mixin caption-s-medium {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@mixin caption-s-regular {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}

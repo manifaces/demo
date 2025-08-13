@@ -1,0 +1,21 @@
+@use 'styles' as ds;
+
+.DynamicPercent {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 10px;
+  height: 24px;
+  border-radius: 32px;
+  @include ds.font-caption-s-medium;
+}
+
+.DynamicPercent_positive {
+  color: ds.$color-accent-green-70;
+  background-color: ds.$color-accent-green-20;
+}
+
+.DynamicPercent_negative {
+  color: ds.$color-accent-red-20;
+  background-color: ds.$color-accent-red-70;
+}

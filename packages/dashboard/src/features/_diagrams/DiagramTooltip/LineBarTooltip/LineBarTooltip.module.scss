@@ -1,0 +1,62 @@
+@use 'styles' as ds;
+
+.LineBarTooltip {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 288px;
+  padding: 16px 20px;
+  background-color: ds.$color-secondary-0;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px 0 rgb(56 62 73 / 12%);
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    transform: translateX(-50%);
+    left: 50%;
+    display: block;
+    width: 16px;
+    height: 8px;
+    background-image: url('./_assets/ShapeBottom.svg');
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    @include ds.font-body-s-semibold;
+  }
+
+  &__color {
+    flex-shrink: 0;
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+    border-radius: 4px;
+    background-color: var(--color, #2482ff);
+  }
+
+  &__value {
+    @include ds.font-caption-s-regular;
+  }
+
+  &__year {
+    @include ds.font-caption-s-medium;
+    margin-right: 8px;
+  }
+
+  &__change {
+    margin-left: 4px;
+  }
+}

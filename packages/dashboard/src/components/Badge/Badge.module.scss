@@ -1,0 +1,33 @@
+@use 'styles' as ds;
+
+.Badge {
+  @include ds.font-caption-s-medium;
+  display: inline-flex;
+  padding: 4px 10px;
+  background-color: ds.$color-accent-green-20;
+  border-radius: 100px;
+  white-space: nowrap;
+
+  &_up {
+    color: ds.$color-accent-green-70;
+  }
+
+  &_down {
+    background-color: ds.$color-accent-red-20;
+    color: ds.$color-accent-red-70;
+  }
+
+  &_route {
+    @include ds.font-body-s-medium;
+    padding: 6px 12px;
+    background-color: ds.$color-secondary-10;
+    color: ds.$color-secondary-80;
+    box-shadow: 0 0 0 1px ds.$color-secondary-40;
+
+    &:hover {
+      background-color: ds.$color-accent-green-20;
+      color: ds.$color-accent-green-70;
+      box-shadow: 0 0 0 1px ds.$color-accent-green-70;
+    }
+  }
+}

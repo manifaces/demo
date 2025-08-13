@@ -1,0 +1,9 @@
+.ContentBox {
+  --content-box-padding: 32px;
+  --content-box-width: 1216px;
+  max-width: calc(var(--content-box-width) + var(--content-box-padding) * 2);
+  width: 100%;
+  padding: 32px var(--content-box-padding) 40px;
+  margin-right: auto;
+  margin-left: auto;
+}

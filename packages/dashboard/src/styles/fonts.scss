@@ -1,0 +1,23 @@
+/* inter-regular */
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/Inter-Regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-medium */
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/Inter-Medium.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-semibold */
+@font-face {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/Inter-SemiBold.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}

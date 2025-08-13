@@ -1,0 +1,1 @@
+export { SmallBarTooltip } from './SmallBarTooltip';

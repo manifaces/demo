@@ -1,0 +1,14 @@
+@use 'styles' as ds;
+
+.Divider {
+  background-color: ds.$color-secondary-20;
+  height: 1px;
+  width: 100%;
+}
+
+.Divider_vertical {
+  height: auto;
+  align-self: stretch;
+  flex-shrink: 0;
+  width: 1px;
+}

@@ -1,0 +1,48 @@
+@use 'styles' as ds;
+
+.AreaTooltip {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px 16px 16px 20px;
+  background-color: ds.$color-secondary-0;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px 0 rgb(56 62 73 / 12%);
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  &__color {
+    flex-shrink: 0;
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+    border-radius: 4px;
+    background-color: var(--color, #2482ff);
+  }
+
+  &__title {
+    @include ds.font-body-s-semibold;
+  }
+
+  &__value,
+  &__name {
+    @include ds.font-caption-s-regular;
+  }
+
+  &__value {
+    margin-right: 4px;
+    color: ds.$color-secondary-100;
+  }
+
+  &__name {
+    margin-right: 8px;
+  }
+
+  &__change {
+    margin-left: 4px;
+  }
+}

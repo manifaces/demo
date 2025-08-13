@@ -1,0 +1,12 @@
+@use 'styles' as ds;
+
+.SoldTicket__changeView {
+  cursor: pointer;
+
+  @include ds.font-body-s-regular;
+}
+
+.SoldTicket__diagram {
+  display: grid;
+  gap: 16px;
+}
